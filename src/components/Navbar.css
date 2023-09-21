@@ -1,0 +1,59 @@
+/* General Styles for Larger Screens (Desktop) */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #f06, #9f6);
+  padding: 10px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+  color: #FFA500;
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles for Mobile View */
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      width: 100%;
+      gap: 1rem;
+  }
+
+  .nav-link {
+      text-align: center;
+      width: 100%;
+  }
+}
