@@ -19,8 +19,8 @@ const Todo = () => {
   
  
     return (
-    <div className='conatiner sj mt-5 w-50'>
-      <div className="input-group mx-5">
+    <div className='sj '>
+      <div className="input-group child ">
       <input type="text" class="form-control" value={todoTitle} onChange={(e)=>{
         e.preventDefault();
         setTodoTitle(e.target.value)
@@ -35,3 +35,4 @@ const Todo = () => {
 }
 
 export default Todo
+
